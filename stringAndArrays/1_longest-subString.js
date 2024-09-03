@@ -1,3 +1,4 @@
+// uses 2 pointer concept
 /*
  * Longest Substring Without Repeating Characters
  *
