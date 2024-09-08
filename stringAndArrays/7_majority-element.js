@@ -11,12 +11,9 @@ let majorityElement = function (nums) {
     ht[num] = ht[num] + 1 || 1;
   }
 
-  const isNumsOfEvenLength = nums.length % 2 === 0;
-  const median = Math.floor(nums.length / 2);
+  const median = Math.ceil(nums.length / 2);
   for (const key in ht) {
-    if (isNumsOfEvenLength && ht[key] >= median) {
-      return key;
-    } else if (!isNumsOfEvenLength && ht[key] > median) {
+    if (ht[key] >= median) {
       return key;
     }
   }
