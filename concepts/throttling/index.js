@@ -4,9 +4,9 @@ let logData = (event) => {
 }
 
 let debounce = (fun, delay) => {
-  let self = this;
   let flag = true;
   return function (event) {
+    let self = this;
     if(flag) {
       fun.call(self, event);
       flag = false;
