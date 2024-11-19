@@ -1,0 +1,56 @@
+Basic Node.js Questions
+1. What is Node.js, and why is it popular?
+2. What is the purpose of npm (Node Package Manager)?
+3. Explain the Node.js Event Loop.
+4. What is the difference between require and import in Node.js?
+5. What is a callback function, and how is it used in Node.js?
+6. How does asynchronous programming work in Node.js?
+7. What is a buffer in Node.js, and why is it used?
+8. Explain what middleware is in Express.js.
+9. What is the package.json file, and why is it important?
+10. What is the difference between process.nextTick() and setImmediate()?
+Intermediate Node.js Questions
+1. Explain how Promises work in Node.js.
+2. What is the role of the EventEmitter class in Node.js?
+3. How do you manage and handle errors in Node.js?
+4. What is the difference between fs.readFile and fs.readFileSync?
+5. What are streams in Node.js, and how are they used?
+6. Explain how to implement a basic API in Node.js using Express.
+7. How does Node.js handle multi-threading?
+8. What are the differences between process environment variables and command-line arguments?
+9. How can you implement clustering in Node.js to optimize performance?
+10. Explain the concept of middleware in Express and how it works.
+Advanced Node.js Questions
+1. What is the difference between fork and spawn in Node.js? ========> Very Advanced
+2. How would you handle large file uploads in a Node.js application?
+3. Explain how worker threads work in Node.js.
+4. What is Event Loop delay and how can you monitor it?
+5. Describe how you would secure a Node.js application.
+6. What is the purpose of v8 in Node.js?
+7. How do you implement a rate limiter in Node.js?
+8. Explain Dependency Injection and how it can be achieved in Node.js.
+9. What is the purpose of the cluster module, and how does it improve Node.js performance?
+10. What are LTS (Long Term Support) versions of Node.js, and why are they important?
+Common Coding Questions
+1. Write a function to read a file asynchronously and log its content to the console.
+2. Create a basic HTTP server in Node.js without using Express.
+3. Implement a middleware in Express.js to log requests.
+4. Write a function that makes a GET request to an API endpoint and logs the response data.
+5. Create a function that reads a large CSV file in chunks using streams.
+6. Write a Node.js program that creates a child process and logs output from it.
+7. Demonstrate how to use async/await to handle asynchronous code in Node.js.
+8. Write a script that monitors CPU or memory usage in a Node.js application.
+9. Create a REST API with CRUD operations using Node.js and Express.
+10. Implement JWT-based authentication in Node.js using a basic Express setup.
+Questions on Best Practices and Optimization
+1. What are some best practices for error handling in Node.js?
+2. How do you handle memory leaks in a Node.js application?
+3. What are the benefits of using async/await over callbacks or Promises?
+4. How can you optimize the performance of a Node.js application?
+5. What is hot reloading, and how can you implement it in a Node.js application?
+Miscellaneous
+1. How do you deploy a Node.js application?
+2. Explain the concept of CORS and how it applies to Node.js applications.
+3. How would you configure environment variables in Node.js?
+4. Describe how session management works in Node.js.
+5. What is a REST API, and how do you create one using Node.js and Express?

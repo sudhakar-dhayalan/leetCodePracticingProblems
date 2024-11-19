@@ -1,14 +1,15 @@
-let sentence = "the sky is blue";
-
-let reverse = str => {
-  // return str.split(' ').reverse().join(' ');
+let reverse = s => {
+  // return s.split(' ').reverse().join(' ');
 
   let out = '';
-  let rightPointer = i = str.length -1, leftPointer = i = str.length -1;
+  let rightPointer = s.length -1, leftPointer = s.length -1;
   while (leftPointer >=0) {
-    if (str[leftPointer] === ' ' || leftPointer === 0) {
-      out += str.slice(leftPointer, rightPointer + 1) + (leftPointer !== 0 ? ' ': '');
-      rightPointer = leftPointer;
+    if (s[leftPointer] === ' ' || leftPointer === 0) {
+      out += s.slice(leftPointer !== 0 ? leftPointer + 1: leftPointer, rightPointer + 1).trim();
+
+      out = out.trim();
+      if (leftPointer !== 0) out += ' ';
+      rightPointer = leftPointer - 1;
     }
 
     leftPointer--;
@@ -16,5 +17,8 @@ let reverse = str => {
   return out;
 };
 
-console.log(reverse(sentence));
+console.log(reverse("the sky is blue")); // blue is sky the
+console.log(reverse("  hello world  ")); // "world hello"
+console.log(reverse("a good   example")); // "example good a"
+console.log(reverse(" asdasd df f")); // "f df asdasd" not working
 
