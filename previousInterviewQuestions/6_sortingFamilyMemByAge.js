@@ -29,7 +29,7 @@ let familiesList = [
 let sortedFamilyList = [];
 
 for (let family of familiesList) {
-  let keyValueList = Object.entries(family);
+  let keyValueList = Object.entries(family); // [ 'son', 3 ], [ 'spouse', 31 ], [ 'self', 32 ], [ 'daughter', 6 ]
   console.log(keyValueList);
   keyValueList.sort((a, b) => a[1] - b[1]);
   let individualFamily = {};

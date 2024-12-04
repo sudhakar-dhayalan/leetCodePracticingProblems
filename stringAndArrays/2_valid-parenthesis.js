@@ -3,13 +3,30 @@
  * @return {boolean}
  */
 let isValid = function (s) {
-  console.log(s.length%2)
-  if (typeof s === 'string' && s.length%2 !== 0) {
-    return "string";
+  if (s.length%2 !== 0) {
+    return false;
   }
-  for (let i = 0; i < s.length; i++) {
-    
+
+  let validParen = '() {} []';
+  
+  let i = 0;
+  let stack = [];
+  while (i < s.length) {
+    stack.push(s[i]);
+    i++;
+
+    const open = stack[stack.length - 2];
+    const closed = stack[stack.length - 1];
+    let paren = open + closed;
+    if (validParen.includes(paren)) {
+      stack.pop();
+      stack.pop();
+    }
   }
+  return stack.length === 0;
 };
 
-console.log(isValid('()')); // tru
+console.log(isValid('([])')); // true
+console.log(isValid('([)')); // false
+console.log(isValid('([)]')); // false
+console.log(isValid('([]){}')); // true

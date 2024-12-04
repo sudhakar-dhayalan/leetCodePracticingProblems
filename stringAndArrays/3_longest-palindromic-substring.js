@@ -1,3 +1,44 @@
+const longestPalindromeOwnLogic = (str) => {
+  let palind = '';
+  
+  for (let i = 0; i < str.length; i ++) {
+    const oddPal = eachCharAsCenterAndExpand(str, i, i);
+    const evenPal = eachCharAsCenterAndExpand(str, i, i + 1);
+
+    if (oddPal.length > palind.length) {
+      palind = oddPal;
+    }
+    if (evenPal.length > palind.length) {
+      palind = evenPal;
+    }
+  }
+
+  return palind;
+};
+
+const eachCharAsCenterAndExpand = (str, i, j) => {
+  let pal = '';
+  for (let index = i; index >= 0;) {
+    if (str[index] != str[j]) {
+      break;
+    } else {
+      if (index === j) {
+        pal = str[index]
+      } else {
+        pal = str[index] + pal + str[j]
+      }
+      ++j;
+      --index;
+    }
+  }
+  return pal;
+}
+
+console.log(longestPalindromeOwnLogic('babad')); // bab
+console.log(longestPalindromeOwnLogic('abad')); // abba
+console.log(longestPalindromeOwnLogic('abba')); // abba
+
+
 // uses 2 pointer concept
 /**
  * https://leetcode.com/problems/longest-palindromic-substring/description/
@@ -44,6 +85,6 @@ let expandFromCenter = (str, left, right) => {
   return str.slice(left - j, right + j + 1);
 };
 
-// console.log(longestPalindrome('malayalam')); // malayalam
+console.log(longestPalindrome('malayalam')); // malayalam
 console.log(longestPalindrome('babad')); // bab
 // console.log(longestPalindrome('abbad')); // abba
