@@ -1,15 +1,17 @@
-import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.HashSet;
+import java.util.Objects;
 
 class HighestSalary {
 
     public static void main(String[] args) {
-        var employeeList = new ArrayList<Employee>();
+        var employeeList = new HashSet<Employee>();
         employeeList.add(new Employee(1, "person_1", 99));
         employeeList.add(new Employee(2, "person_2", 92));
         employeeList.add(new Employee(3, "person_3", 98));
         employeeList.add(new Employee(4, "person_4", 100));
         employeeList.add(new Employee(4, "person_5", 110));
+        employeeList.add(new Employee(4, "person_6", 110));
 
         Employee emp = employeeList.stream()
                 .sorted(Comparator.comparingInt(Employee::getSalary).reversed())
@@ -18,6 +20,7 @@ class HighestSalary {
                 .get();
 
         System.out.println(emp);
+        System.out.println(employeeList);
     }
 }
 
@@ -31,6 +34,18 @@ class Employee {
         this.id = id;
         this.name = name;
         this.salary = salary;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass()) return false;
+        Employee employee = (Employee) o;
+        return Objects.equals(id, employee.id);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hashCode(id);
     }
 
     public Integer getId() {
