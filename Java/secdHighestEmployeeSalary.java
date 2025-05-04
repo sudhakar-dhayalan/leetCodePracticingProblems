@@ -1,6 +1,7 @@
 import java.util.Comparator;
 import java.util.HashSet;
 import java.util.Objects;
+import java.util.Optional;
 
 class HighestSalary {
 
@@ -13,13 +14,16 @@ class HighestSalary {
         employeeList.add(new Employee(4, "person_5", 110));
         employeeList.add(new Employee(4, "person_6", 110));
 
-        Employee emp = employeeList.stream()
+        Optional<Employee> emp = Optional.of(employeeList.stream()
                 .sorted(Comparator.comparingInt(Employee::getSalary).reversed())
                 .skip(1)
                 .findFirst()
-                .get();
+                .get());
 
-        System.out.println(emp);
+        emp.ifPresentOrElse(
+                e -> System.out.println(e),
+                () -> System.out.println("No Employee found")
+        );
         System.out.println(employeeList);
     }
 }
