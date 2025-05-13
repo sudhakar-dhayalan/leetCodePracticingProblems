@@ -1,0 +1,22 @@
+1. Prefix sum pattern
+    Range sum query - immutable
+    Contiguous array
+    Subarray sum equals k
+2. Two pointers pattern
+    palindrome
+    two sum || - Input array is sorted
+    3sum
+    container with most water
+3. Sliding window (sub array, sub string)
+     Maximum Average Subarray
+     Longest substring without repeating characters
+     Minimum window substring
+4. Fast and slow pointers (variant of 2 pointers)
+    Linked list cycle
+    Happy number
+    Find the duplicate number
+5. Linked list in-place reversal
+    Reverse linked list
+    Reverse linked list ||
+    Swap nodes in pair
+
