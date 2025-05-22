@@ -66,7 +66,7 @@ public class MergeSort {
 //            arr[i] = random.nextInt(100);
 //        }
 
-        int[] arr = {2,1,4,3, -1, 10};
+        int[] arr = {2, 1, 4, 3, -1, 10};
 
         System.out.println("--- Before Sorting ----");
         printArray(arr);
@@ -78,7 +78,7 @@ public class MergeSort {
     }
 
     private static void printArray(int[] arr) {
-        for(int i = 0; i < arr.length; i++) {
+        for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i]);
             System.out.print(" ");
         }
