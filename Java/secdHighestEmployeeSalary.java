@@ -15,6 +15,7 @@ class HighestSalary {
         employeeList.add(new Employee(4, "person_6", 110));
 
         Optional<Employee> emp = Optional.of(employeeList.stream()
+                .distinct()
                 .sorted(Comparator.comparingInt(Employee::getSalary).reversed())
                 .skip(1)
                 .findFirst()

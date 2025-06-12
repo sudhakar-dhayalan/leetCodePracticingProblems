@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
+// length of longest sub-string without repeating characters
 public class LengthOfLongestSubString {
     public static void main(String[] args) {
 
