@@ -12,11 +12,12 @@ public class ClosestTarget {
 
         // Method created inside this class itself and called
         System.out.println(closestTarget2(list, target));
+
     }
 
     private static int closestTarget2(List<Integer> list, int num) {
-        int target = 0;
-        int diff = 10000;
+        int target = Integer.MIN_VALUE;
+        int diff = Integer.MAX_VALUE;
         for (int n : list) {
             int closestDiff = num > n ? num - n: n - num;
             if (closestDiff < diff) {
