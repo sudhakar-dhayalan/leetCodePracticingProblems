@@ -1,0 +1,15 @@
+You have an object and want to add new responsibilities (features) at runtime
+    without modifying the original code or using subclassing.
+
+    Attach new behaviors to objects dynamically by placing them inside special wrapper objects
+
+
+Think of a coffee shop:
+    Base: Espresso
+    Decorators: Add milk, sugar, whipped cream
+    You don’t create subclasses like MilkEspresso, SugarMilkEspresso. You wrap the base with decorators!
+
+When to Use
+    To extend behavior of classes at runtime.
+    Avoid subclass explosion (too many subclasses).
+    Want to stick to composition over inheritance.

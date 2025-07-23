@@ -1,0 +1,11 @@
+Create objects without specifying the exact class name, using a factory method.
+
+ADVANTAGES:
+    All creation logic is in one place
+    Open for extension, closed for modification
+    Decouples creation logic -> You never use new Class() outside the factory
+
+Real-time use case:
+    Notification system - creates correct notifier
+    Parsing file formats(JSON, XML, CSV) - returns the appropriate parser
+    Creating different types of UI buttons (WindowsButton, MacButton)

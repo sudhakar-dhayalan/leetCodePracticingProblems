@@ -1,0 +1,22 @@
+Create complex objects step by step,
+    with readable,
+    maintainable,
+    and flexible code
+without constructor overloads
+
+Eg:
+    new User("John", "Doe", 25, ""eg@gmail.com", "address");
+What if you want to provide SOME VALUES, and keep others as DEFAULT
+
+Use case:
+    -> User profile having optional fields
+    -> Creating HTTP requests
+    -> Setting up an immutable configuration object
+
+Two ways we can create Builder patter:
+    1. inner static class builder
+        - new User.Builder().age(30)...
+        - used in JavaBeans, POJO's
+    2. external public class builder
+        - new Jwts.builder().setObject("abc)...
+        - Libraries like JJWT, OkHttp

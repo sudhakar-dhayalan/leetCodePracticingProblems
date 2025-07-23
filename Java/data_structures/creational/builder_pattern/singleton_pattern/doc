@@ -1,0 +1,5 @@
+Only 1 instance is created and is shared across the application.
+
+Real-time scenario:
+    Logging
+    DB Connection Manager
