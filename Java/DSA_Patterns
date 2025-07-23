@@ -1,0 +1,30 @@
+1. Prefix sum pattern
+    Range sum query - immutable
+    Contiguous array
+    Subarray sum equals k
+2. Two pointers pattern
+    palindrome
+    two sum || - Input array is sorted
+    3sum
+    container with most water
+3. Sliding window (sub array, sub string)
+     Maximum Average Subarray
+     Longest substring without repeating characters
+     Minimum window substring
+4. Fast and slow pointers (variant of 2 pointers)
+    Linked list cycle
+    Happy number
+    Find the duplicate number
+5. Linked list in-place reversal
+    Reverse linked list
+    Reverse linked list ||
+    Swap nodes in pair
+
+✅ Tries & Strings: Concatenated words, Longest substring without repeats, Interleaving string
+✅ Searching & Sorting: Min in rotated sorted array, 132 pattern, Largest divisible subset, Search a 2D matrix
+✅ Hashing: 4Sum, Rabbits in forest, Min window substring, Count nice pairs
+✅ Stacks & Queues: IPO, Longest valid parentheses, Sliding window median, Sliding window max
+✅ Greedy: Maximize the topmost element after K moves
+✅ DP: Longest common subsequence, Longest consecutive sequence, Max strength of k disjoint subarrays
+✅ Two Pointers: Boats to save people, 2Sum, Container with most water, Trapping rain water
+✅ Graphs & Trees: Cheapest flight within K stops, Satisfiability of equality equations, Unique paths, Collect coins in a tree

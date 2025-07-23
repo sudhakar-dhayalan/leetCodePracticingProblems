@@ -1,0 +1,10 @@
+Structural Pattern
+Make incompatible interfaces work together
+
+Real World - Plug adapter, language translator
+Used in	Spring Security adapters, JDBC drivers
+
+Advantages
+    Reuse existing code without changes
+    Promotes loose coupling
+    Good for integrating 3rd-party or legacy code
