@@ -3,10 +3,10 @@ package data_structures.creational.builder_pattern.external_builder_class;
 public class User {
     private final String firstName;
     private final String lastName;
-    private final int age;
+    private final Integer age;
     private final String email;
 
-    public User(String firstName, String lastName, int age, String email) {
+    public User(String firstName, String lastName, Integer age, String email) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.age = age;
@@ -14,7 +14,8 @@ public class User {
     }
 
     public void print() {
-        System.out.println(firstName + " " + lastName + " age is " + age + " and email id is " + email);
+        if (age == null)
+            System.out.println(firstName + " " + lastName + " and email id is " + email);
     }
 
     public static class Users {
