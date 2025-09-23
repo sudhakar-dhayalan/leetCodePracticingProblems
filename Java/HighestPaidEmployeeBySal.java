@@ -72,6 +72,27 @@ public class HighestPaidEmployeeBySal {
         secondHighestPaidEmpOnEachDepartment2ndWay.forEach((dept, emp) -> {
             System.out.println(dept + " -> " + emp.map(Empl::name).orElse("None"));
         });
+
+
+        // Find out sum of salary based on gender from an employee
+        System.out.println("Find out sum of salary based on Age");
+        Map<Integer, Integer> salary = employees
+                .stream()
+                .collect(
+                        Collectors.groupingBy(
+                                Empl::age,
+                                Collectors.summingInt(Empl::salary)
+                        )
+                );
+        System.out.println(salary);
+
+
+        System.out.println("Highest earning employee over all the departments");
+        Empl empl = employees
+                .stream()
+                .max((e1, e2) -> e1.salary() > e2.salary() ? 1 : -1)
+                .get();
+        System.out.println(empl);
     }
 }
 
