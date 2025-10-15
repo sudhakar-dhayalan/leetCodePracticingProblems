@@ -26,7 +26,7 @@ public class UserBuilder {
         return this;
     }
 
-    public User builder() {
+    public User build() {
         return new User(firstName, lastName, age, email);
     }
 }

@@ -7,7 +7,7 @@ public class Main {
                 .setLastName("Doe")
 //                .setAge(24) // if not set, I don't want the field to be present in user object itself
                 .setEmail("ifNotSet,WillBeNull@gmail.com")
-                .builder();
+                .build();
         user.print();
     }
 }
