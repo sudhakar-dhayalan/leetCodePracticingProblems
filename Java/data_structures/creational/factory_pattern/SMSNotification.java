@@ -1,4 +1,4 @@
-package data_structures.creational.builder_pattern.factory_pattern;
+package data_structures.creational.factory_pattern;
 
 public class SMSNotification implements Notification{
     @Override

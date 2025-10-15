@@ -1,9 +1,9 @@
-package data_structures.creational.builder_pattern.builder_pattern.external_builder_class;
+package data_structures.creational.builder_pattern.external_builder_class;
 
 public class UserBuilder {
     private String firstName;
     private String lastName;
-    private int age = 18;
+    private Integer age = null;
     private String email;
 
     public UserBuilder setFirstName(String firstName) {
@@ -16,7 +16,7 @@ public class UserBuilder {
         return this;
     }
 
-    public UserBuilder setAge(int age) {
+    public UserBuilder setAge(Integer age) {
         this.age = age;
         return this;
     }
@@ -26,7 +26,7 @@ public class UserBuilder {
         return this;
     }
 
-    public User builder() {
+    public User build() {
         return new User(firstName, lastName, age, email);
     }
 }

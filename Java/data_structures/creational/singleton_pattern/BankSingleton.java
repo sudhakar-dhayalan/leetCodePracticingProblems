@@ -1,4 +1,4 @@
-package data_structures.creational.builder_pattern.singleton_pattern;
+package data_structures.creational.singleton_pattern;
 
 public class BankSingleton {
     private BankSingleton() {}
